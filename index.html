@@ -25,5 +25,29 @@
         <button class="choose-btn" data-choice="O">O</button>
       </div>
     </div>
-
+  <!-- Help button fixed top-right -->
+<button id="helpBtn" class="help-button" aria-label="Game rules and how to play">?</button>
+<!-- Help modal overlay -->
+<div id="helpModal" class="overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="helpTitle" aria-describedby="helpDesc">
+  <div class="modal-box">
+    <h2 id="helpTitle">How to Play</h2>
+    <div id="helpDesc" tabindex="0">
+      <p><strong>Game Rules:</strong></p>
+      <ul>
+        <li>Two players take turns marking empty cells.</li>
+        <li>The first to get three in a row (horizontal, vertical, diagonal) wins.</li>
+        <li>If all cells are filled without a winner, the game is a tie.</li>
+      </ul>
+      <p><strong>Controls:</strong></p>
+      <ul>
+        <li>Use mouse to click cells or buttons.</li>
+        <li>Use <kbd>Tab</kbd> to navigate interactive elements.</li>
+        <li>Use <kbd>Arrow Keys</kbd> to move focus across the game grid.</li>
+        <li>Press <kbd>Enter</kbd> or <kbd>Space</kbd> to select cells or activate buttons.</li>
+      </ul>
+      <p>Click the close button or press <kbd>Esc</kbd> to close this panel.</p>
+    </div>
+    <button id="closeHelpBtn" class="close-help-btn" aria-label="Close help panel">Close</button>
+  </div>
+</div>
     
